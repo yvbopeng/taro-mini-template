@@ -2,7 +2,7 @@
   "miniprogramRoot": "./dist",
   "projectname": "taroMimiTemplate",
   "description": "taro+vue+nutUI+pinia",
-  "appid": "touristappid",
+  "appid": "wx79ca2aa66a5881b0",
   "setting": {
     "urlCheck": true,
     "es6": false,
