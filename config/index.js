@@ -83,6 +83,19 @@ const config = {
     publicPath: '/',
     staticDirectory: 'static',
     esnextModules: ['nutui-taro', 'icons-vue-taro'],
+
+    devServer: {
+      port: 10086,
+      proxy: {
+        "/cors-api": {
+          target: "https://animechan.io",
+          changeOrigin: true,
+          pathRewrite: {
+            "^/cors-api": "",
+          },
+        },
+      },
+    },
     postcss: {
       autoprefixer: {
         enable: true,

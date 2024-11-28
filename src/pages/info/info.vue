@@ -13,15 +13,11 @@ export default {
     }
   },
   setup() {
-    const message = ref("");
     const countStore = useCounterStore()
-
-    console.log(countStore.count)
-    // console.log(countStore.getCounter())
-
+    
+    console.log(process.env.TARO_APP_ENV_NAME)
 
     return {
-      message,
       countStore
     }
   }

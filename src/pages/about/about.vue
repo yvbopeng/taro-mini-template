@@ -16,7 +16,6 @@
 </template>
 <script>
 import { getInfo } from '../../services';
-import './about.scss'
 import Counter from '../../components/Counter.vue'
 
 export default {
@@ -30,16 +29,36 @@ export default {
     },
     methods: {
         handleClick() {
-            // getInfo().then(res => {
-            //     console.log(res)
-            //     this.content = res.data.content
-            // })
+            getInfo().then(res => {
+                console.log(res)
+                this.content = res.data.content
+            })
         }
     }
 }
 </script>
-<style lang="scss" >
+<style lang="scss">
 .about {
-    color: red;
+    width: 100%;
+    height: 100%;
+    .button-warp {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-warp {
+        padding-top: 30px;
+        text {
+            width: 100%;
+        }
+        .about-title {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+    }
 }
 </style>
