@@ -4,6 +4,7 @@ export default defineAppConfig({
     'pages/about/about',
     'pages/info/info'
   ],
+  lazyCodeLoading: 'requiredComponents',
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',

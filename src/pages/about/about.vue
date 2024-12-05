@@ -5,7 +5,7 @@
         </view>
         <view class="text-warp">
 
-            <text class="about-title">
+            <text class="about-title" :user-select="true">
                 {{ content }}
             </text>
         </view>

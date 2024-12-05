@@ -33,7 +33,7 @@ const config = {
     prebundle: { enable: false }
   },
   sass:{
-    data: `@import "@nutui/nutui-taro/dist/styles/variables.scss";`
+    data: `@import "@nutui/nutui-taro/dist/styles/variables-jdt.scss";`
   },
   mini: {
     webpackChain(chain) {
