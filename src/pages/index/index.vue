@@ -21,7 +21,7 @@ import Taro from '@tarojs/taro';
 
 function goInfoPage() {
   Taro.navigateTo({
-    url: '/pages/info/info'
+    url: '/packageA/pages/info/info'
   })
 }
 

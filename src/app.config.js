@@ -2,7 +2,12 @@ export default defineAppConfig({
   pages: [
     'pages/index/index',
     'pages/about/about',
-    'pages/info/info'
+  ],
+  subPackages: [
+    {
+      root: 'packageA',
+      pages: ['pages/info/info']
+    }
   ],
   lazyCodeLoading: 'requiredComponents',
   window: {

@@ -5,7 +5,7 @@
 </template>
 <script>
 import { ref } from 'vue';
-import { useCounterStore } from '../../stores/counter';
+import { useCounterStore } from '../../../stores/counter';
 
 export default {
   data() {
